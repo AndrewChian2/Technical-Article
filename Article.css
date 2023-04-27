@@ -22,7 +22,8 @@
   }
 /* ------------------------------- */
 .parent {
-
+padding-left:2%;
+padding-right:2%;
 }
 
 .TitleHeader{
@@ -38,6 +39,35 @@
 .toc-list{
 
 }
+
+.SummCybersecurity{
+
+}
+.CybersecurityHistory{
+
+}
+.ZeroDayExploits{
+
+}
+.ZeroDayImg{
+
+}
+.CyberAttackExamples{
+
+}
+.WhyOS{
+
+}
+.RealCyberAttacks{
+
+}
+.ModernCybersecurityStandards{
+
+}
+/* .securitymeasures-cardgroup{
+    breakpoint:
+} */
+
 .section-1 {}
 
 .section-2 {}

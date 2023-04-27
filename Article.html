@@ -128,7 +128,7 @@
             <div class="card mb-3" style="max-height:fit-content">
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <img src="ZeroDayLifecycle.png" class="img-fluid rounded-start" alt="...">
+                    <img src="ZeroDayLifecycle.png" class="img-fluid rounded-start ZeroDayImg" alt="...">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
@@ -285,7 +285,7 @@
         <div class="ModernCybersecurityStandards" id="section-7">
             <h2>Modern Cybersecurity Measures</h2>
 
-            <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="row row-cols-1 row-cols-md-4 g-4 mb-4">
 
                 <!-- Multi-factor Authentication -->
                 <div class="col">
@@ -297,14 +297,14 @@
                             addition to a secondary device. Security is increased since if one credential becomes compromised, accounts can
                             still remain secure.</p>
                         </div>
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="MultiFactAuth">
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#MultiFact-Strength" aria-expanded="false" aria-controls="collapseTwo">
                                 <h6><strong>Strengths</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="MultiFact-Strength" class="accordion-collapse collapse" data-bs-parent="#MultiFactAuth">
                             <div class="accordion-body">
                             <ul>
                                     <li><strong>Enhanced security</strong><br>
@@ -325,11 +325,11 @@
                         </div>
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#MultiFact-Weakness" aria-expanded="false" aria-controls="collapseThree">
                                 <h6><strong>Weaknesses</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="MultiFact-Weakness" class="accordion-collapse collapse" data-bs-parent="#MultiFactAuth">
                             <div class="accordion-body">
                                 <ul>
                                     <li><strong>Complexity</strong><br>
@@ -361,28 +361,28 @@
                             remain limited and monitored.
                         </p>
                         </div>
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="ZeroTrustArch">
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ZeroTrust-Strength" aria-expanded="false" aria-controls="collapseTwo">
                                 <h6><strong>Strengths</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="ZeroTrust-Strength" class="accordion-collapse collapse" data-bs-parent="#ZeroTrustArch">
                             <div class="accordion-body">
                             <ul>
-                                    <!-- TODO: Needs to be Updated -->
                                     <li><strong>Enhanced security</strong><br>
-                                        Adding an extra layer of authentication makes it harder for an attacker to
-                                        gain access to the system
+                                        By not granting access on any device until they
+                                        have been safely verified, the security of the application is greatly improved
                                     </li>
                                     <li><strong>Improved visibility</strong><br>
-                                        Increases the chance users are who they claim to be
+                                        Allows organizations to better monitor, detect, and
+                                        respond to security threats since network activity is being monitored
                                     </li>
 
-                                    <li><strong>Customizable</strong><br>
-                                        There are different ways to add layers of authentication to best meet the
-                                        type of product and security
+                                    <li><strong>Reduced Risk of Data Breaches</strong><br>
+                                        Greater security means there will be a reduced risk 
+                                        of data breaches in the system
                                     </li>
                                 </ul>
                             </div>
@@ -390,25 +390,22 @@
                         </div>
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ZeroTrust-Weakness" aria-expanded="false" aria-controls="collapseThree">
                                 <h6><strong>Weaknesses</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="ZeroTrust-Weakness" class="accordion-collapse collapse" data-bs-parent="#ZeroTrustArch">
                             <div class="accordion-body">
                                 <ul>
-                                    <!-- TODO: Needs to be Updated -->
                                     <li><strong>Complexity</strong><br>
-                                        Authentication systems can be difficult to set up and maintain and can take
-                                        up additional time and resources
+                                        Significant costs in investment in time, resources, and money
+                                    </li>
+                                    <li><strong>Increased Management Overhead</strong><br>
+                                        There needs to be large amounts of monitoring which can take
+                                        up time and resources in management
                                     </li>
                                     <li><strong>User Inconvenience</strong><br>
-                                        Users will have to verify multiple times to gain access, which can pose as
-                                        an inconvenience
-                                    </li>
-                                    <li><strong>Possibility of Compromise</strong><br>
-                                        Attackers are still able to bypass multi-factor authentication through
-                                        methods such as phishing or social engineering
+                                        Disruptive to users by being a sometimes cumbersome barrier for access
                                     </li>
                                 </ul>
                             </div>
@@ -426,28 +423,26 @@
                             securing endpoints.
                             These endpoints are then protected on the network or in the cloud.</p>
                         </div>
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="EndPointSecurity">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#EndPoint-Strength" aria-expanded="false" aria-controls="collapseTwo">
                                     <h6><strong>Strengths</strong></h6>
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div id="EndPoint-Strength" class="accordion-collapse collapse" data-bs-parent="#EndPointSecurity">
                                 <div class="accordion-body">
                                 <ul>
-                                    <!-- TODO: Needs to be Updated -->
                                     <li><strong>Enhanced security</strong><br>
-                                        Adding an extra layer of authentication makes it harder for an attacker to
-                                        gain access to the system
+                                        Comprehensive protection is given by protecting the endpoints of various devices
                                     </li>
-                                    <li><strong>Improved Authentication</strong><br>
-                                        Increases the chance users are who they claim to be
+                                    <li><strong>Improved Visibility</strong><br>
+                                        There can be greater monitoring and knowledge of the devices that are in your network
                                     </li>
 
-                                    <li><strong>Customizable</strong><br>
-                                        There are different ways to add layers of authentication to best meet the
-                                        type of product and security
+                                    <li><strong>Flexibility</strong><br>
+                                        There is greater flexibility with customizable policies, integrations with other solutions,
+                                        scalability and compatibility with different endpoints
                                     </li>
                                 </ul>
                                 </div>
@@ -455,25 +450,23 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#EndPoint-Weakness" aria-expanded="false" aria-controls="collapseThree">
                                     <h6><strong>Weaknesses</strong></h6>
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div id="EndPoint-Weakness" class="accordion-collapse collapse" data-bs-parent="#EndPointSecurity">
                                 <div class="accordion-body">
                                     <ul>
-                                        <!-- TODO: Needs to be Updated -->
-                                        <li><strong>Complexity</strong><br>
-                                            Authentication systems can be difficult to set up and maintain and can take
-                                            up additional time and resources
+                                        <li><strong>Limited Protection</strong><br>
+                                            Not effective against all attacks such as
+                                            social engineering, theft of endpoints, or vulnerability exploits
                                         </li>
-                                        <li><strong>User Inconvenience</strong><br>
-                                            Users will have to verify multiple times to gain access, which can pose as
-                                            an inconvenience
+                                        <li><strong>Management Overhead</strong><br>
+                                            There needs to be regular configurations, updates, and patches
                                         </li>
-                                        <li><strong>Possibility of Compromise</strong><br>
-                                            Attackers are still able to bypass multi-factor authentication through
-                                            methods such as phishing or social engineering
+                                        <li><strong>False Positives</strong><br>
+                                            Occurs when a security solution falsely identifies normal
+                                            use behavior as suspicious which can result in a waste of resources to investigate
                                         </li>
                                     </ul>
                                 </div>
@@ -489,33 +482,33 @@
                         <div class="card-body">
                             <h5 class="card-title">Cloud Security</h5>
                             <p class="card-text">
-                                Cloud security is used to protect databases and information by using the access controls, encryptions,
+                                Cloud security is used to protect databases and information by using access controls, encryptions,
                                 and monitoring that is included within cloud environments. This is especially important if you are using cloud-based
                                 tools and software.
                             </p>
                         </div>
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="CloudSecurity">
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#CloudSecurity-Strength" aria-expanded="false" aria-controls="collapseTwo">
                                 <h6><strong>Strengths</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="CloudSecurity-Strength" class="accordion-collapse collapse" data-bs-parent="#CloudSecurity">
                             <div class="accordion-body">
                                 <ul>
-                                    <!-- TODO: Needs to be Updated -->
-                                    <li><strong>Enhanced security</strong><br>
-                                        Adding an extra layer of authentication makes it harder for an attacker to
-                                        gain access to the system
+                                    <li><strong>Scalability</strong><br>
+                                        Can be easily adjusted to the size or needs of an organization.
+                                        Can be used as a business grows or shrinks
                                     </li>
-                                    <li><strong>Improved Authentication</strong><br>
-                                        Increases the chance users are who they claim to be
+                                    <li><strong>Enhance Security</strong><br>
+                                        Providers generally have a larger team and more advanced technologies,
+                                        in addition to a range of tools to accommodate needs
                                     </li>
 
-                                    <li><strong>Customizable</strong><br>
-                                        There are different ways to add layers of authentication to best meet the
-                                        type of product and security
+                                    <li><strong>Lower Costs</strong><br>
+                                        Can be more cost effective since it typically requires less hardware and software infrastructure
+                                        , which means less maintenance and personnel required
                                     </li>
                                 </ul>
                             </div>
@@ -523,25 +516,23 @@
                         </div>
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#CloudSecurity-Weakness" aria-expanded="false" aria-controls="collapseThree">
                                 <h6><strong>Weaknesses</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="CloudSecurity-Weakness" class="accordion-collapse collapse" data-bs-parent="#CloudSecurity">
                             <div class="accordion-body">
                                 <ul>
-                                    <!-- TODO: Needs to be Updated -->
-                                    <li><strong>Complexity</strong><br>
-                                        Authentication systems can be difficult to set up and maintain and can take
-                                        up additional time and resources
+                                    <li><strong>Dependency</strong><br>
+                                        Dependent on the cloud provider resulting in any breaches
+                                        on their services compromising the security of the user’s application
                                     </li>
-                                    <li><strong>User Inconvenience</strong><br>
-                                        Users will have to verify multiple times to gain access, which can pose as
-                                        an inconvenience
+                                    <li><strong>Compliance</strong><br>
+                                        Jurisdictions may apply based on the type of data being stored or processed
                                     </li>
-                                    <li><strong>Possibility of Compromise</strong><br>
-                                        Attackers are still able to bypass multi-factor authentication through
-                                        methods such as phishing or social engineering
+                                    <li><strong>Data Breaches</strong><br>
+                                        Cyber criminals can exploit vulnerabilities in a cloud provider’s
+                                        system to gain access to an application or system
                                     </li>
                                 </ul>
                             </div>
@@ -560,28 +551,27 @@
                                 cybersecurity attacks to be able to recognize and deal with the threat accordingly.
                             </p>
                         </div>
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="SecurityTraining">
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SecurityTraining-Strength" aria-expanded="false" aria-controls="collapseTwo">
                                 <h6><strong>Strengths</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="SecurityTraining-Strength" class="accordion-collapse collapse" data-bs-parent="#SecurityTraining">
                             <div class="accordion-body">
                                 <ul>
-                                    <!-- TODO: Needs to be Updated -->
-                                    <li><strong>Enhanced security</strong><br>
-                                        Adding an extra layer of authentication makes it harder for an attacker to
-                                        gain access to the system
+                                    <li><strong>Scalability</strong><br>
+                                        As a business or organization grows, it can simply add 
+                                        more training modules or resources to its existing programs as well as deliver them remotely to add to convenience
                                     </li>
-                                    <li><strong>Improved Authentication</strong><br>
-                                        Increases the chance users are who they claim to be
+                                    <li><strong>Enhanced Security</strong><br>
+                                        Training individuals can be more adaptable and defend against social engineering attacks such as phishing. 
+                                        Additionally, breaches due to human error will be reduced
                                     </li>
 
-                                    <li><strong>Customizable</strong><br>
-                                        There are different ways to add layers of authentication to best meet the
-                                        type of product and security
+                                    <li><strong>Lower Costs</strong><br>
+                                        There does not need to be a significant investment in infrastructure, hardware or software
                                     </li>
                                 </ul>
                             </div>
@@ -589,25 +579,22 @@
                         </div>
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SecurityTraining-Weakness" aria-expanded="false" aria-controls="collapseThree">
                                 <h6><strong>Weaknesses</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="SecurityTraining-Weakness" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul>
-                                    <!-- TODO: Needs to be Updated -->
-                                    <li><strong>Complexity</strong><br>
-                                        Authentication systems can be difficult to set up and maintain and can take
-                                        up additional time and resources
+                                    <li><strong>Dependency</strong><br>
+                                        Dependent on employees to follow the protocols and have 
+                                        good decision making. If the employees do not take the training seriously, the security will not matter
                                     </li>
-                                    <li><strong>User Inconvenience</strong><br>
-                                        Users will have to verify multiple times to gain access, which can pose as
-                                        an inconvenience
+                                    <li><strong>Compliance</strong><br>
+                                        There will need to be a different set of procedures to be followed based on the organization and its needs
                                     </li>
-                                    <li><strong>Possibility of Compromise</strong><br>
-                                        Attackers are still able to bypass multi-factor authentication through
-                                        methods such as phishing or social engineering
+                                    <li><strong>Possiblity of Data Breaches</strong><br>
+                                        There needs to be a thorough understanding of the training or else data breaches will occur
                                     </li>
                                 </ul>
                             </div>
@@ -626,28 +613,25 @@
                             proper threat intelligence software accordingly.
                         </p>
                         </div>
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="ThreatIntel">
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ThreatIntel-Strength" aria-expanded="false" aria-controls="collapseTwo">
                                 <h6><strong>Strengths</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="ThreatIntel-Strength" class="accordion-collapse collapse" data-bs-parent="#ThreatIntel">
                             <div class="accordion-body">
                                 <ul>
-                                    <!-- TODO: Needs to be Updated -->
-                                    <li><strong>Enhanced security</strong><br>
-                                        Adding an extra layer of authentication makes it harder for an attacker to
-                                        gain access to the system
+                                    <li><strong>Praoctive Security</strong><br>
+                                        Gathers information on emerging threats and can mitigate them before they pose a security threat
                                     </li>
-                                    <li><strong>Improved Authentication</strong><br>
-                                        Increases the chance users are who they claim to be
+                                    <li><strong>Increased Awareness</strong><br>
+                                        Improve collective understanding of threats by sharing the information and strengthening security as a whole
                                     </li>
 
-                                    <li><strong>Customizable</strong><br>
-                                        There are different ways to add layers of authentication to best meet the
-                                        type of product and security
+                                    <li><strong>Better Decision Making</strong><br>
+                                        Based on information collected, more informed security responses can be taken
                                     </li>
                                 </ul>
                             </div>
@@ -655,25 +639,21 @@
                         </div>
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ThreatIntel-Weakness" aria-expanded="false" aria-controls="collapseThree">
                                 <h6><strong>Weaknesses</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="ThreatIntel-Weakness" class="accordion-collapse collapse" data-bs-parent="#ThreatIntel">
                             <div class="accordion-body">
                                 <ul>
-                                    <!-- TODO: Needs to be Updated -->
-                                    <li><strong>Complexity</strong><br>
-                                        Authentication systems can be difficult to set up and maintain and can take
-                                        up additional time and resources
+                                    <li><strong>Overwhelming Amount of Data</strong><br>
+                                        A vast amount of data can be generated and can be difficult to manage and analyze effectively
                                     </li>
-                                    <li><strong>User Inconvenience</strong><br>
-                                        Users will have to verify multiple times to gain access, which can pose as
-                                        an inconvenience
+                                    <li><strong>Lack of Context</strong><br>
+                                        Without the right context, it may be difficult to label what situations may pose as a threat and make serious decisions
                                     </li>
-                                    <li><strong>Possibility of Compromise</strong><br>
-                                        Attackers are still able to bypass multi-factor authentication through
-                                        methods such as phishing or social engineering
+                                    <li><strong>False Positives</strong><br>
+                                        Information can be incorrectly labeled as a threat leading to wasted resources or cause teams to overlook real threats
                                     </li>
                                 </ul>
                             </div>
@@ -693,28 +673,26 @@
                                 plans is preparation, identification, containment, eradication, recovery, and lesson learned.
                             </p>
                         </div>
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="ResponsePlanning">
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ResponsePlanning-Strength" aria-expanded="false" aria-controls="collapseTwo">
                                 <h6><strong>Strengths</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="ResponsePlanning-Strength" class="accordion-collapse collapse" data-bs-parent="#ResponsePlanning">
                             <div class="accordion-body">
                                 <ul>
-                                    <!-- TODO: Needs to be Updated -->
-                                    <li><strong>Enhanced security</strong><br>
-                                        Adding an extra layer of authentication makes it harder for an attacker to
-                                        gain access to the system
+                                    <li><strong>Rapid Response</strong><br>
+                                        Helps organizations respond faster to security threats by defining 
+                                        responsibilities and procedures. In the case of an attack, the process will go smoother
                                     </li>
-                                    <li><strong>Improved Authentication</strong><br>
-                                        Increases the chance users are who they claim to be
+                                    <li><strong>Improved Preparation</strong><br>
+                                        Businesses and organizations will be more up to date with the latest attacks and incidences and be better prepared
                                     </li>
 
-                                    <li><strong>Customizable</strong><br>
-                                        There are different ways to add layers of authentication to best meet the
-                                        type of product and security
+                                    <li><strong>Widespread Coordination</strong><br>
+                                        The cases of miscommunication will be reduced and there will be a more efficient workflow
                                     </li>
                                 </ul>
                             </div>
@@ -722,25 +700,23 @@
                         </div>
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ResponsePlanning-Weakness" aria-expanded="false" aria-controls="collapseThree">
                                 <h6><strong>Weaknesses</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="ResponsePlanning-Weakness" class="accordion-collapse collapse" data-bs-parent="#ResponsePlanning">
                             <div class="accordion-body">
                                 <ul>
-                                    <!-- TODO: Needs to be Updated -->
                                     <li><strong>Complexity</strong><br>
-                                        Authentication systems can be difficult to set up and maintain and can take
-                                        up additional time and resources
+                                        Can be a complex and cumbersome process
                                     </li>
-                                    <li><strong>User Inconvenience</strong><br>
-                                        Users will have to verify multiple times to gain access, which can pose as
-                                        an inconvenience
+                                    <li><strong>False Postiives</strong><br>
+                                        Can be time-consuming to investigate
                                     </li>
-                                    <li><strong>Possibility of Compromise</strong><br>
-                                        Attackers are still able to bypass multi-factor authentication through
-                                        methods such as phishing or social engineering
+                                    <li><strong>Limited Scope</strong><br>
+                                        If the plans are not comprehensive enough, 
+                                        threats can be overlooked or teams may not 
+                                        be prepared enough to deal with threats efficiently
                                     </li>
                                 </ul>
                             </div>
@@ -760,28 +736,25 @@
                                 vulnerabilities before hackers can.
                             </p>
                         </div>
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="Patching&Updates">
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Patching&Updates-Strength" aria-expanded="false" aria-controls="collapseTwo">
                                 <h6><strong>Strengths</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="Patching&Updates-Strength" class="accordion-collapse collapse" data-bs-parent="#Patching&Updates">
                             <div class="accordion-body">
                                 <ul>
-                                    <!-- TODO: Needs to be Updated -->
-                                    <li><strong>Enhanced security</strong><br>
-                                        Adding an extra layer of authentication makes it harder for an attacker to
-                                        gain access to the system
+                                    <li><strong>Improved security</strong><br>
+                                        Fixes known vulnerabilities and addressing security flaws
                                     </li>
-                                    <li><strong>Improved Authentication</strong><br>
-                                        Increases the chance users are who they claim to be
+                                    <li><strong>Better Performance</strong><br>
+                                        Reduces slowdowns of the application, by implementation of adaptive security measures
                                     </li>
 
-                                    <li><strong>Customizable</strong><br>
-                                        There are different ways to add layers of authentication to best meet the
-                                        type of product and security
+                                    <li><strong>Compliance</strong><br>
+                                        Helps the application remain compliant with standards by keeping them up to date
                                     </li>
                                 </ul>
                             </div>
@@ -789,25 +762,21 @@
                         </div>
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Patching&Updates-Weakness" aria-expanded="false" aria-controls="collapseThree">
                                 <h6><strong>Weaknesses</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="Patching&Updates-Weakness" class="accordion-collapse collapse" data-bs-parent="#Patching&Updates">
                             <div class="accordion-body">
                                 <ul>
-                                    <!-- TODO: Needs to be Updated -->
-                                    <li><strong>Complexity</strong><br>
-                                        Authentication systems can be difficult to set up and maintain and can take
-                                        up additional time and resources
+                                    <li><strong>Disruptions</strong><br>
+                                        Can sometimes end up slowing down the system or leading to performance issues
                                     </li>
-                                    <li><strong>User Inconvenience</strong><br>
-                                        Users will have to verify multiple times to gain access, which can pose as
-                                        an inconvenience
+                                    <li><strong>Compatibility Issues</strong><br>
+                                        If not implemented correctly can cause version mismatches and affect the system as a whole leading to failures
                                     </li>
-                                    <li><strong>Possibility of Compromise</strong><br>
-                                        Attackers are still able to bypass multi-factor authentication through
-                                        methods such as phishing or social engineering
+                                    <li><strong>Delayed Updates</strong><br>
+                                        Can leave the system vulnerable during updates
                                     </li>
                                 </ul>
                             </div>
@@ -827,28 +796,25 @@
                                 authorized parties receive the information, the key is used to unscramble the information.
                             </p>
                         </div>
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="DataEncryption">
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#DataEncryption-Strength" aria-expanded="false" aria-controls="collapseTwo">
                                 <h6><strong>Strengths</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="DataEncryption-Strength" class="accordion-collapse collapse" data-bs-parent="#DataEncryption">
                             <div class="accordion-body">
                                 <ul>
-                                    <!-- TODO: Needs to be Updated -->
-                                    <li><strong>Enhanced security</strong><br>
-                                        Adding an extra layer of authentication makes it harder for an attacker to
-                                        gain access to the system
+                                    <li><strong>Improved security</strong><br>
+                                        Even if data is stolen, it will be unreadable to anyone who does not have the decryption key
                                     </li>
-                                    <li><strong>Improved Authentication</strong><br>
-                                        Increases the chance users are who they claim to be
+                                    <li><strong>Compliance</strong><br>
+                                        Helps the application remain compliant with standards by keeping them up to date
                                     </li>
 
-                                    <li><strong>Customizable</strong><br>
-                                        There are different ways to add layers of authentication to best meet the
-                                        type of product and security
+                                    <li><strong>Safe Data Storage & Transfer</strong><br>
+                                        Data can be safely stored and transmitted without the risk of exposure
                                     </li>
                                 </ul>
                             </div>
@@ -856,25 +822,23 @@
                         </div>
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#DataEncryption-Weakness" aria-expanded="false" aria-controls="collapseThree">
                                 <h6><strong>Weaknesses</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="DataEncryption-Weakness" class="accordion-collapse collapse" data-bs-parent="#DataEncryption">
                             <div class="accordion-body">
                                 <ul>
-                                    <!-- TODO: Needs to be Updated -->
                                     <li><strong>Complexity</strong><br>
-                                        Authentication systems can be difficult to set up and maintain and can take
-                                        up additional time and resources
+                                        Can require specialized knowledge or expertise to 
+                                        implement which can be challenging for organizations with limited understanding
                                     </li>
-                                    <li><strong>User Inconvenience</strong><br>
-                                        Users will have to verify multiple times to gain access, which can pose as
-                                        an inconvenience
+                                    <li><strong>Key Management</strong><br>
+                                        Managing keys can be complex and time consuming
                                     </li>
-                                    <li><strong>Possibility of Compromise</strong><br>
-                                        Attackers are still able to bypass multi-factor authentication through
-                                        methods such as phishing or social engineering
+                                    <li><strong>Performance Impact</strong><br>
+                                        The system can be slowed or require additional infrastructure when 
+                                        large amount of data is being encrypted or decrypted
                                     </li>
                                 </ul>
                             </div>
@@ -893,28 +857,25 @@
                                 operations
                             </p>
                         </div>
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="SecurityAutomation">
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SecurityAutomation-Strength" aria-expanded="false" aria-controls="collapseTwo">
                                 <h6><strong>Strengths</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="SecurityAutomation-Strength" class="accordion-collapse collapse" data-bs-parent="#SecurityAutomation">
                             <div class="accordion-body">
                                 <ul>
-                                    <!-- TODO: Needs to be Updated -->
-                                    <li><strong>Enhanced security</strong><br>
-                                        Adding an extra layer of authentication makes it harder for an attacker to
-                                        gain access to the system
+                                    <li><strong>Increased Efficiency</strong><br>
+                                        By automating, fewer resources need to be used on hardware, software, and personnel
                                     </li>
-                                    <li><strong>Improved Authentication</strong><br>
-                                        Increases the chance users are who they claim to be
+                                    <li><strong>Improved Accuracy</strong><br>
+                                        Helps to make sure processes are carried out consistently and accurately
                                     </li>
 
-                                    <li><strong>Customizable</strong><br>
-                                        There are different ways to add layers of authentication to best meet the
-                                        type of product and security
+                                    <li><strong>Faster Response Time</strong><br>
+                                        Response to incidents are faster and more effectively by reducing the time it takes to detect an incident
                                     </li>
                                 </ul>
                             </div>
@@ -922,25 +883,23 @@
                         </div>
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SecurityAutomation-Weakness" aria-expanded="false" aria-controls="collapseThree">
                                 <h6><strong>Weaknesses</strong></h6>
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="SecurityAutomation-Weakness" class="accordion-collapse collapse" data-bs-parent="#SecurityAutomation">
                             <div class="accordion-body">
                                 <ul>
-                                    <!-- TODO: Needs to be Updated -->
                                     <li><strong>Complexity</strong><br>
-                                        Authentication systems can be difficult to set up and maintain and can take
-                                        up additional time and resources
+                                        If existing systems are not designed to work well together, 
+                                        automation can be complex to implement and update
                                     </li>
-                                    <li><strong>User Inconvenience</strong><br>
-                                        Users will have to verify multiple times to gain access, which can pose as
-                                        an inconvenience
+                                    <li><strong>False Positives</strong><br>
+                                        Can lead to false positives if the algorithms are not well implemented 
+                                        due to a lack of information or context
                                     </li>
-                                    <li><strong>Possibility of Compromise</strong><br>
-                                        Attackers are still able to bypass multi-factor authentication through
-                                        methods such as phishing or social engineering
+                                    <li><strong>Limited Scope</strong><br>
+                                        Cannot automate to protect against something you are not aware of
                                     </li>
                                 </ul>
                             </div>
