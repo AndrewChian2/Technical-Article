@@ -4,12 +4,22 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="Article.css">
+    <style>
+        body {
+            background-image: url("background4.avif");
+            background-size: auto;
+            background-position: center center;
+        }
+    </style>
     <title>Operating System Security: OS Zero Day Exploits</title>
 </head>
 
@@ -42,7 +52,6 @@
         <a href="#section-10">Sources</a></li>
     </div> -->
 
-
     <div class="container-fluid parent">
         <!-- Title Header -->
         <div class="TitleHeader">
@@ -71,25 +80,31 @@
         </div>
         <!-- Table of Contents Line Break -->
         <hr>
-        
+
         <!-- Summary of Cybersecurity -->
-        <div class= "container-fluid">
+        <div class="container-fluid">
             <div class="row">
                 <div class="SummCybersecurity col" id="section-1">
                     <h2>Summary of Cybersecurity</h2>
                     <p>Cybersecurity is the practice involved with securing electronic devices, networks, and sensitive
                         information from
-                        unauthorized access,theft, or use. In an ever increasing digital world the environment for cyber crime
+                        unauthorized access,theft, or use. In an ever increasing digital world the environment for cyber
+                        crime
                         to happen is
-                        constantly changing and evolving. Because there is a constant threat of evolving vulnerabilities and
+                        constantly changing and evolving. Because there is a constant threat of evolving vulnerabilities
+                        and
                         methods of attack,
-                        we as computer scientists must create a strong defense against this unknown. Many of these crimes are
+                        we as computer scientists must create a strong defense against this unknown. Many of these
+                        crimes are
                         targeted at
-                        government agencies, financial institutions, large corporations, and critical infrastructure. Some
+                        government agencies, financial institutions, large corporations, and critical infrastructure.
+                        Some
                         recent cybersecurity
-                        attacks in the form of data breaches have endangered millions of people to identity theft and other
+                        attacks in the form of data breaches have endangered millions of people to identity theft and
+                        other
                         fraudulent activity.
-                        These kinds of events highlight the need for strong cybersecurity measures against any unknown attacker.
+                        These kinds of events highlight the need for strong cybersecurity measures against any unknown
+                        attacker.
                         As seen in
                         class, the goal of contemporary cybersecurity is to find innovative solutions that will ensure
                         confidentiality,
@@ -97,25 +112,34 @@
                 </div>
                 <div class="CybersecurityHistory col" id="section-2">
                     <h2>Brief History of Cybersecurity, and its Advancements</h2>
-                    <p>Although cybersecurity is a recent development in response to the incredible pace that technology has
+                    <p>Although cybersecurity is a recent development in response to the incredible pace that technology
+                        has
                         been integrating
-                        into our daily lives, cybersecurity concepts are ingrained in our history as a means of protecting and
+                        into our daily lives, cybersecurity concepts are ingrained in our history as a means of
+                        protecting and
                         ensuring the
                         validity of critical information. This can be seen as early as the first century with encryption
                         techniques such as the
-                        Caesar cipher or Steganography. These early methods for securing classified information marks the roots
+                        Caesar cipher or Steganography. These early methods for securing classified information marks
+                        the roots
                         of cybersecurity
-                        principles present currently in our interconnected society. As the advancement of the personal computer
+                        principles present currently in our interconnected society. As the advancement of the personal
+                        computer
                         became more
-                        prevalent and with it the development of a large scale interconnected network that we know today as “The
+                        prevalent and with it the development of a large scale interconnected network that we know today
+                        as “The
                         Internet” new
-                        cybersecurity challenges arose. New threats of individual attacks on information systems and network
+                        cybersecurity challenges arose. New threats of individual attacks on information systems and
+                        network
                         attacks, shifted
-                        focus to ensuring not only confidentiality of information but also integrity and proper availability of
+                        focus to ensuring not only confidentiality of information but also integrity and proper
+                        availability of
                         the information
-                        for authorized users. Today cybersecurity principles cover a wide range of mechanisms to ensure full
+                        for authorized users. Today cybersecurity principles cover a wide range of mechanisms to ensure
+                        full
                         coverage and tiered
-                        levels of protection for critical information and infrastructure that we need in order for society to
+                        levels of protection for critical information and infrastructure that we need in order for
+                        society to
                         function.</p>
                 </div>
             </div>
@@ -127,24 +151,31 @@
             <br>
             <div class="card mb-3" style="max-height:fit-content">
                 <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="ZeroDayLifecycle.png" class="img-fluid rounded-start ZeroDayImg" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Zero Day Exploits</h5>
-                      <p class="text">A zero-day exploit is a type of cyber attack that takes advantage of a vulnerability or flaw in software that is unknown
-                        to the software vendor or cybersecurity experts. These vulnerabilities can be exploited to gain unauthorized access to
-                        sensitive information, install malware or other malicious software, or cause other damage to computer systems and
-                        networks. Zero-day exploits are particularly dangerous because they are often used by sophisticated cyber criminals or
-                        state-sponsored hackers, who use them to target high-value targets. Because these vulnerabilities are
-                        unknown to cybersecurity experts, they are difficult to detect and prevent, making them a significant threat to cybersecurity.
-                      </p>
-                        <div class="align-content-center">
-                            <a href="https://portswigger.net/daily-swig/zero-day" target="_blank" class="btn btn-primary">Read More About Zero Day Exploits/Vulnerabilities</a>
+                    <div class="col-md-4">
+                        <img src="ZeroDayLifecycle.png" class="img-fluid rounded-start ZeroDayImg" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Zero Day Exploits</h5>
+                            <p class="text">A zero-day exploit is a type of cyber attack that takes advantage of a
+                                vulnerability or flaw in software that is unknown
+                                to the software vendor or cybersecurity experts. These vulnerabilities can be exploited
+                                to gain unauthorized access to
+                                sensitive information, install malware or other malicious software, or cause other
+                                damage to computer systems and
+                                networks. Zero-day exploits are particularly dangerous because they are often used by
+                                sophisticated cyber criminals or
+                                state-sponsored hackers, who use them to target high-value targets. Because these
+                                vulnerabilities are
+                                unknown to cybersecurity experts, they are difficult to detect and prevent, making them
+                                a significant threat to cybersecurity.
+                            </p>
+                            <div class="align-content-center">
+                                <a href="https://portswigger.net/daily-swig/zero-day" target="_blank"
+                                    class="btn btn-primary">Read More About Zero Day Exploits/Vulnerabilities</a>
+                            </div>
                         </div>
                     </div>
-                  </div>
                 </div>
             </div>
             <br>
@@ -284,195 +315,227 @@
         <!-- Modern Cybersecurity Measures -->
         <div class="ModernCybersecurityStandards" id="section-7">
             <h2>Modern Cybersecurity Measures</h2>
-
+            <br>
             <div class="row row-cols-1 row-cols-md-4 g-4 mb-4">
 
                 <!-- Multi-factor Authentication -->
                 <div class="col">
                     <div class="card h-100" style="width: 18rem;">
                         <div class="card-body">
-                        <h5 class="card-title">Multi-Factor Authentication</h5>
-                        <p class="card-text">Multi-Factor authentication is a form of cybersecurity that requires users to present
-                            multiple forms of identification. For example, the system may require users to provide a password in
-                            addition to a secondary device. Security is increased since if one credential becomes compromised, accounts can
-                            still remain secure.</p>
+                            <h5 class="card-title">Multi-Factor Authentication</h5>
+                            <p class="card-text">Multi-Factor authentication is a form of cybersecurity that requires
+                                users to present
+                                multiple forms of identification. For example, the system may require users to provide a
+                                password in
+                                addition to a secondary device. Security is increased since if one credential becomes
+                                compromised, accounts can
+                                still remain secure.</p>
                         </div>
-                    <div class="accordion" id="MultiFactAuth">
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#MultiFact-Strength" aria-expanded="false" aria-controls="collapseTwo">
-                                <h6><strong>Strengths</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="MultiFact-Strength" class="accordion-collapse collapse" data-bs-parent="#MultiFactAuth">
-                            <div class="accordion-body">
-                            <ul>
-                                    <li><strong>Enhanced security</strong><br>
-                                        Adding an extra layer of authentication makes it harder for an attacker to
-                                        gain access to the system
-                                    </li>
-                                    <li><strong>Improved Authentication</strong><br>
-                                        Increases the chance users are who they claim to be
-                                    </li>
+                        <div class="accordion" id="MultiFactAuth">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#MultiFact-Strength" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <h6><strong>Strengths</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="MultiFact-Strength" class="accordion-collapse collapse"
+                                    data-bs-parent="#MultiFactAuth">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Enhanced security</strong><br>
+                                                Adding an extra layer of authentication makes it harder for an attacker
+                                                to
+                                                gain access to the system
+                                            </li>
+                                            <li><strong>Improved Authentication</strong><br>
+                                                Increases the chance users are who they claim to be
+                                            </li>
 
-                                    <li><strong>Customizable</strong><br>
-                                        There are different ways to add layers of authentication to best meet the
-                                        type of product and security
-                                    </li>
-                                </ul>
+                                            <li><strong>Customizable</strong><br>
+                                                There are different ways to add layers of authentication to best meet
+                                                the
+                                                type of product and security
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#MultiFact-Weakness" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <h6><strong>Weaknesses</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="MultiFact-Weakness" class="accordion-collapse collapse"
+                                    data-bs-parent="#MultiFactAuth">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Complexity</strong><br>
+                                                Authentication systems can be difficult to set up and maintain and can
+                                                take
+                                                up additional time and resources
+                                            </li>
+                                            <li><strong>User Inconvenience</strong><br>
+                                                Users will have to verify multiple times to gain access, which can pose
+                                                as
+                                                an inconvenience
+                                            </li>
+                                            <li><strong>Possibility of Compromise</strong><br>
+                                                Attackers are still able to bypass multi-factor authentication through
+                                                methods such as phishing or social engineering
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#MultiFact-Weakness" aria-expanded="false" aria-controls="collapseThree">
-                                <h6><strong>Weaknesses</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="MultiFact-Weakness" class="accordion-collapse collapse" data-bs-parent="#MultiFactAuth">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><strong>Complexity</strong><br>
-                                        Authentication systems can be difficult to set up and maintain and can take
-                                        up additional time and resources
-                                    </li>
-                                    <li><strong>User Inconvenience</strong><br>
-                                        Users will have to verify multiple times to gain access, which can pose as
-                                        an inconvenience
-                                    </li>
-                                    <li><strong>Possibility of Compromise</strong><br>
-                                        Attackers are still able to bypass multi-factor authentication through
-                                        methods such as phishing or social engineering
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <!-- Zero Trust Architecture -->
                 <div class="col">
                     <div class="card h-100" style="width: 18rem;">
                         <div class="card-body">
-                        <h5 class="card-title">Zero Trust Architecture</h5>
-                        <p class="card-text">The application is structured to assume that the user cannot be trusted
-                            even once they are in the network. Authentication will be used at all levels and access will
-                            remain limited and monitored.
-                        </p>
+                            <h5 class="card-title">Zero Trust Architecture</h5>
+                            <p class="card-text">The application is structured to assume that the user cannot be trusted
+                                even once they are in the network. Authentication will be used at all levels and access
+                                will
+                                remain limited and monitored.
+                            </p>
                         </div>
-                    <div class="accordion" id="ZeroTrustArch">
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ZeroTrust-Strength" aria-expanded="false" aria-controls="collapseTwo">
-                                <h6><strong>Strengths</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="ZeroTrust-Strength" class="accordion-collapse collapse" data-bs-parent="#ZeroTrustArch">
-                            <div class="accordion-body">
-                            <ul>
-                                    <li><strong>Enhanced security</strong><br>
-                                        By not granting access on any device until they
-                                        have been safely verified, the security of the application is greatly improved
-                                    </li>
-                                    <li><strong>Improved visibility</strong><br>
-                                        Allows organizations to better monitor, detect, and
-                                        respond to security threats since network activity is being monitored
-                                    </li>
+                        <div class="accordion" id="ZeroTrustArch">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#ZeroTrust-Strength" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <h6><strong>Strengths</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="ZeroTrust-Strength" class="accordion-collapse collapse"
+                                    data-bs-parent="#ZeroTrustArch">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Enhanced security</strong><br>
+                                                By not granting access on any device until they
+                                                have been safely verified, the security of the application is greatly
+                                                improved
+                                            </li>
+                                            <li><strong>Improved visibility</strong><br>
+                                                Allows organizations to better monitor, detect, and
+                                                respond to security threats since network activity is being monitored
+                                            </li>
 
-                                    <li><strong>Reduced Risk of Data Breaches</strong><br>
-                                        Greater security means there will be a reduced risk 
-                                        of data breaches in the system
-                                    </li>
-                                </ul>
+                                            <li><strong>Reduced Risk of Data Breaches</strong><br>
+                                                Greater security means there will be a reduced risk
+                                                of data breaches in the system
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#ZeroTrust-Weakness" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <h6><strong>Weaknesses</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="ZeroTrust-Weakness" class="accordion-collapse collapse"
+                                    data-bs-parent="#ZeroTrustArch">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Complexity</strong><br>
+                                                Significant costs in investment in time, resources, and money
+                                            </li>
+                                            <li><strong>Increased Management Overhead</strong><br>
+                                                There needs to be large amounts of monitoring which can take
+                                                up time and resources in management
+                                            </li>
+                                            <li><strong>User Inconvenience</strong><br>
+                                                Disruptive to users by being a sometimes cumbersome barrier for access
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ZeroTrust-Weakness" aria-expanded="false" aria-controls="collapseThree">
-                                <h6><strong>Weaknesses</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="ZeroTrust-Weakness" class="accordion-collapse collapse" data-bs-parent="#ZeroTrustArch">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><strong>Complexity</strong><br>
-                                        Significant costs in investment in time, resources, and money
-                                    </li>
-                                    <li><strong>Increased Management Overhead</strong><br>
-                                        There needs to be large amounts of monitoring which can take
-                                        up time and resources in management
-                                    </li>
-                                    <li><strong>User Inconvenience</strong><br>
-                                        Disruptive to users by being a sometimes cumbersome barrier for access
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <!-- Endpoint Security -->
                 <div class="col">
                     <div class="card h-100" style="width: 18rem;">
                         <div class="card-body">
-                        <h5 class="card-title">Endpoint Security</h5>
-                        <p class="card-text">This form of security prioritizes securing individual devices into the system by
-                            securing endpoints.
-                            These endpoints are then protected on the network or in the cloud.</p>
+                            <h5 class="card-title">Endpoint Security</h5>
+                            <p class="card-text">This form of security prioritizes securing individual devices into the
+                                system by
+                                securing endpoints.
+                                These endpoints are then protected on the network or in the cloud.</p>
                         </div>
-                    <div class="accordion" id="EndPointSecurity">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#EndPoint-Strength" aria-expanded="false" aria-controls="collapseTwo">
-                                    <h6><strong>Strengths</strong></h6>
-                                </button>
-                            </h2>
-                            <div id="EndPoint-Strength" class="accordion-collapse collapse" data-bs-parent="#EndPointSecurity">
-                                <div class="accordion-body">
-                                <ul>
-                                    <li><strong>Enhanced security</strong><br>
-                                        Comprehensive protection is given by protecting the endpoints of various devices
-                                    </li>
-                                    <li><strong>Improved Visibility</strong><br>
-                                        There can be greater monitoring and knowledge of the devices that are in your network
-                                    </li>
+                        <div class="accordion" id="EndPointSecurity">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#EndPoint-Strength" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <h6><strong>Strengths</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="EndPoint-Strength" class="accordion-collapse collapse"
+                                    data-bs-parent="#EndPointSecurity">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Enhanced security</strong><br>
+                                                Comprehensive protection is given by protecting the endpoints of various
+                                                devices
+                                            </li>
+                                            <li><strong>Improved Visibility</strong><br>
+                                                There can be greater monitoring and knowledge of the devices that are in
+                                                your network
+                                            </li>
 
-                                    <li><strong>Flexibility</strong><br>
-                                        There is greater flexibility with customizable policies, integrations with other solutions,
-                                        scalability and compatibility with different endpoints
-                                    </li>
-                                </ul>
+                                            <li><strong>Flexibility</strong><br>
+                                                There is greater flexibility with customizable policies, integrations
+                                                with other solutions,
+                                                scalability and compatibility with different endpoints
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#EndPoint-Weakness" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <h6><strong>Weaknesses</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="EndPoint-Weakness" class="accordion-collapse collapse"
+                                    data-bs-parent="#EndPointSecurity">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Limited Protection</strong><br>
+                                                Not effective against all attacks such as
+                                                social engineering, theft of endpoints, or vulnerability exploits
+                                            </li>
+                                            <li><strong>Management Overhead</strong><br>
+                                                There needs to be regular configurations, updates, and patches
+                                            </li>
+                                            <li><strong>False Positives</strong><br>
+                                                Occurs when a security solution falsely identifies normal
+                                                use behavior as suspicious which can result in a waste of resources to
+                                                investigate
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#EndPoint-Weakness" aria-expanded="false" aria-controls="collapseThree">
-                                    <h6><strong>Weaknesses</strong></h6>
-                                </button>
-                            </h2>
-                            <div id="EndPoint-Weakness" class="accordion-collapse collapse" data-bs-parent="#EndPointSecurity">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <li><strong>Limited Protection</strong><br>
-                                            Not effective against all attacks such as
-                                            social engineering, theft of endpoints, or vulnerability exploits
-                                        </li>
-                                        <li><strong>Management Overhead</strong><br>
-                                            There needs to be regular configurations, updates, and patches
-                                        </li>
-                                        <li><strong>False Positives</strong><br>
-                                            Occurs when a security solution falsely identifies normal
-                                            use behavior as suspicious which can result in a waste of resources to investigate
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     </div>
 
                 </div>
@@ -482,63 +545,73 @@
                         <div class="card-body">
                             <h5 class="card-title">Cloud Security</h5>
                             <p class="card-text">
-                                Cloud security is used to protect databases and information by using access controls, encryptions,
-                                and monitoring that is included within cloud environments. This is especially important if you are using cloud-based
+                                Cloud security is used to protect databases and information by using access controls,
+                                encryptions,
+                                and monitoring that is included within cloud environments. This is especially important
+                                if you are using cloud-based
                                 tools and software.
                             </p>
                         </div>
-                    <div class="accordion" id="CloudSecurity">
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#CloudSecurity-Strength" aria-expanded="false" aria-controls="collapseTwo">
-                                <h6><strong>Strengths</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="CloudSecurity-Strength" class="accordion-collapse collapse" data-bs-parent="#CloudSecurity">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><strong>Scalability</strong><br>
-                                        Can be easily adjusted to the size or needs of an organization.
-                                        Can be used as a business grows or shrinks
-                                    </li>
-                                    <li><strong>Enhance Security</strong><br>
-                                        Providers generally have a larger team and more advanced technologies,
-                                        in addition to a range of tools to accommodate needs
-                                    </li>
+                        <div class="accordion" id="CloudSecurity">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#CloudSecurity-Strength" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <h6><strong>Strengths</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="CloudSecurity-Strength" class="accordion-collapse collapse"
+                                    data-bs-parent="#CloudSecurity">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Scalability</strong><br>
+                                                Can be easily adjusted to the size or needs of an organization.
+                                                Can be used as a business grows or shrinks
+                                            </li>
+                                            <li><strong>Enhance Security</strong><br>
+                                                Providers generally have a larger team and more advanced technologies,
+                                                in addition to a range of tools to accommodate needs
+                                            </li>
 
-                                    <li><strong>Lower Costs</strong><br>
-                                        Can be more cost effective since it typically requires less hardware and software infrastructure
-                                        , which means less maintenance and personnel required
-                                    </li>
-                                </ul>
+                                            <li><strong>Lower Costs</strong><br>
+                                                Can be more cost effective since it typically requires less hardware and
+                                                software infrastructure
+                                                , which means less maintenance and personnel required
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#CloudSecurity-Weakness" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <h6><strong>Weaknesses</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="CloudSecurity-Weakness" class="accordion-collapse collapse"
+                                    data-bs-parent="#CloudSecurity">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Dependency</strong><br>
+                                                Dependent on the cloud provider resulting in any breaches
+                                                on their services compromising the security of the user’s application
+                                            </li>
+                                            <li><strong>Compliance</strong><br>
+                                                Jurisdictions may apply based on the type of data being stored or
+                                                processed
+                                            </li>
+                                            <li><strong>Data Breaches</strong><br>
+                                                Cyber criminals can exploit vulnerabilities in a cloud provider’s
+                                                system to gain access to an application or system
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#CloudSecurity-Weakness" aria-expanded="false" aria-controls="collapseThree">
-                                <h6><strong>Weaknesses</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="CloudSecurity-Weakness" class="accordion-collapse collapse" data-bs-parent="#CloudSecurity">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><strong>Dependency</strong><br>
-                                        Dependent on the cloud provider resulting in any breaches
-                                        on their services compromising the security of the user’s application
-                                    </li>
-                                    <li><strong>Compliance</strong><br>
-                                        Jurisdictions may apply based on the type of data being stored or processed
-                                    </li>
-                                    <li><strong>Data Breaches</strong><br>
-                                        Cyber criminals can exploit vulnerabilities in a cloud provider’s
-                                        system to gain access to an application or system
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <!-- Security Awareness Training -->
@@ -551,115 +624,139 @@
                                 cybersecurity attacks to be able to recognize and deal with the threat accordingly.
                             </p>
                         </div>
-                    <div class="accordion" id="SecurityTraining">
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SecurityTraining-Strength" aria-expanded="false" aria-controls="collapseTwo">
-                                <h6><strong>Strengths</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="SecurityTraining-Strength" class="accordion-collapse collapse" data-bs-parent="#SecurityTraining">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><strong>Scalability</strong><br>
-                                        As a business or organization grows, it can simply add 
-                                        more training modules or resources to its existing programs as well as deliver them remotely to add to convenience
-                                    </li>
-                                    <li><strong>Enhanced Security</strong><br>
-                                        Training individuals can be more adaptable and defend against social engineering attacks such as phishing. 
-                                        Additionally, breaches due to human error will be reduced
-                                    </li>
+                        <div class="accordion" id="SecurityTraining">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#SecurityTraining-Strength" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <h6><strong>Strengths</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="SecurityTraining-Strength" class="accordion-collapse collapse"
+                                    data-bs-parent="#SecurityTraining">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Scalability</strong><br>
+                                                As a business or organization grows, it can simply add
+                                                more training modules or resources to its existing programs as well as
+                                                deliver them remotely to add to convenience
+                                            </li>
+                                            <li><strong>Enhanced Security</strong><br>
+                                                Training individuals can be more adaptable and defend against social
+                                                engineering attacks such as phishing.
+                                                Additionally, breaches due to human error will be reduced
+                                            </li>
 
-                                    <li><strong>Lower Costs</strong><br>
-                                        There does not need to be a significant investment in infrastructure, hardware or software
-                                    </li>
-                                </ul>
+                                            <li><strong>Lower Costs</strong><br>
+                                                There does not need to be a significant investment in infrastructure,
+                                                hardware or software
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#SecurityTraining-Weakness" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <h6><strong>Weaknesses</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="SecurityTraining-Weakness" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Dependency</strong><br>
+                                                Dependent on employees to follow the protocols and have
+                                                good decision making. If the employees do not take the training
+                                                seriously, the security will not matter
+                                            </li>
+                                            <li><strong>Compliance</strong><br>
+                                                There will need to be a different set of procedures to be followed based
+                                                on the organization and its needs
+                                            </li>
+                                            <li><strong>Possiblity of Data Breaches</strong><br>
+                                                There needs to be a thorough understanding of the training or else data
+                                                breaches will occur
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SecurityTraining-Weakness" aria-expanded="false" aria-controls="collapseThree">
-                                <h6><strong>Weaknesses</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="SecurityTraining-Weakness" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><strong>Dependency</strong><br>
-                                        Dependent on employees to follow the protocols and have 
-                                        good decision making. If the employees do not take the training seriously, the security will not matter
-                                    </li>
-                                    <li><strong>Compliance</strong><br>
-                                        There will need to be a different set of procedures to be followed based on the organization and its needs
-                                    </li>
-                                    <li><strong>Possiblity of Data Breaches</strong><br>
-                                        There needs to be a thorough understanding of the training or else data breaches will occur
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <!-- Threat Intelligence -->
                 <div class="col">
                     <div class="card h-100" style="width: 18rem;">
                         <div class="card-body">
-                        <h5 class="card-title">Threat Intelligence</h5>
-                        <p class="card-text">
-                            This is a response to any emerging cyber or physical threats and utilizing the
-                            proper threat intelligence software accordingly.
-                        </p>
+                            <h5 class="card-title">Threat Intelligence</h5>
+                            <p class="card-text">
+                                This is a response to any emerging cyber or physical threats and utilizing the
+                                proper threat intelligence software accordingly.
+                            </p>
                         </div>
-                    <div class="accordion" id="ThreatIntel">
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ThreatIntel-Strength" aria-expanded="false" aria-controls="collapseTwo">
-                                <h6><strong>Strengths</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="ThreatIntel-Strength" class="accordion-collapse collapse" data-bs-parent="#ThreatIntel">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><strong>Praoctive Security</strong><br>
-                                        Gathers information on emerging threats and can mitigate them before they pose a security threat
-                                    </li>
-                                    <li><strong>Increased Awareness</strong><br>
-                                        Improve collective understanding of threats by sharing the information and strengthening security as a whole
-                                    </li>
+                        <div class="accordion" id="ThreatIntel">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#ThreatIntel-Strength" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <h6><strong>Strengths</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="ThreatIntel-Strength" class="accordion-collapse collapse"
+                                    data-bs-parent="#ThreatIntel">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Praoctive Security</strong><br>
+                                                Gathers information on emerging threats and can mitigate them before
+                                                they pose a security threat
+                                            </li>
+                                            <li><strong>Increased Awareness</strong><br>
+                                                Improve collective understanding of threats by sharing the information
+                                                and strengthening security as a whole
+                                            </li>
 
-                                    <li><strong>Better Decision Making</strong><br>
-                                        Based on information collected, more informed security responses can be taken
-                                    </li>
-                                </ul>
+                                            <li><strong>Better Decision Making</strong><br>
+                                                Based on information collected, more informed security responses can be
+                                                taken
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#ThreatIntel-Weakness" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <h6><strong>Weaknesses</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="ThreatIntel-Weakness" class="accordion-collapse collapse"
+                                    data-bs-parent="#ThreatIntel">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Overwhelming Amount of Data</strong><br>
+                                                A vast amount of data can be generated and can be difficult to manage
+                                                and analyze effectively
+                                            </li>
+                                            <li><strong>Lack of Context</strong><br>
+                                                Without the right context, it may be difficult to label what situations
+                                                may pose as a threat and make serious decisions
+                                            </li>
+                                            <li><strong>False Positives</strong><br>
+                                                Information can be incorrectly labeled as a threat leading to wasted
+                                                resources or cause teams to overlook real threats
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ThreatIntel-Weakness" aria-expanded="false" aria-controls="collapseThree">
-                                <h6><strong>Weaknesses</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="ThreatIntel-Weakness" class="accordion-collapse collapse" data-bs-parent="#ThreatIntel">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><strong>Overwhelming Amount of Data</strong><br>
-                                        A vast amount of data can be generated and can be difficult to manage and analyze effectively
-                                    </li>
-                                    <li><strong>Lack of Context</strong><br>
-                                        Without the right context, it may be difficult to label what situations may pose as a threat and make serious decisions
-                                    </li>
-                                    <li><strong>False Positives</strong><br>
-                                        Information can be incorrectly labeled as a threat leading to wasted resources or cause teams to overlook real threats
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <!-- Incident Response Planning -->
@@ -668,61 +765,73 @@
                         <div class="card-body">
                             <h5 class="card-title">Incident Response Planning</h5>
                             <p class="card-text">
-                                This strategy involves having a plan in the case of an attack. Since not all cyber breaches
-                                are preventable, this strategy prioritizes remaining robust and flexible. The life cycle of these
-                                plans is preparation, identification, containment, eradication, recovery, and lesson learned.
+                                This strategy involves having a plan in the case of an attack. Since not all cyber
+                                breaches
+                                are preventable, this strategy prioritizes remaining robust and flexible. The life cycle
+                                of these
+                                plans is preparation, identification, containment, eradication, recovery, and lesson
+                                learned.
                             </p>
                         </div>
-                    <div class="accordion" id="ResponsePlanning">
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ResponsePlanning-Strength" aria-expanded="false" aria-controls="collapseTwo">
-                                <h6><strong>Strengths</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="ResponsePlanning-Strength" class="accordion-collapse collapse" data-bs-parent="#ResponsePlanning">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><strong>Rapid Response</strong><br>
-                                        Helps organizations respond faster to security threats by defining 
-                                        responsibilities and procedures. In the case of an attack, the process will go smoother
-                                    </li>
-                                    <li><strong>Improved Preparation</strong><br>
-                                        Businesses and organizations will be more up to date with the latest attacks and incidences and be better prepared
-                                    </li>
+                        <div class="accordion" id="ResponsePlanning">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#ResponsePlanning-Strength" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <h6><strong>Strengths</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="ResponsePlanning-Strength" class="accordion-collapse collapse"
+                                    data-bs-parent="#ResponsePlanning">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Rapid Response</strong><br>
+                                                Helps organizations respond faster to security threats by defining
+                                                responsibilities and procedures. In the case of an attack, the process
+                                                will go smoother
+                                            </li>
+                                            <li><strong>Improved Preparation</strong><br>
+                                                Businesses and organizations will be more up to date with the latest
+                                                attacks and incidences and be better prepared
+                                            </li>
 
-                                    <li><strong>Widespread Coordination</strong><br>
-                                        The cases of miscommunication will be reduced and there will be a more efficient workflow
-                                    </li>
-                                </ul>
+                                            <li><strong>Widespread Coordination</strong><br>
+                                                The cases of miscommunication will be reduced and there will be a more
+                                                efficient workflow
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#ResponsePlanning-Weakness" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <h6><strong>Weaknesses</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="ResponsePlanning-Weakness" class="accordion-collapse collapse"
+                                    data-bs-parent="#ResponsePlanning">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Complexity</strong><br>
+                                                Can be a complex and cumbersome process
+                                            </li>
+                                            <li><strong>False Postiives</strong><br>
+                                                Can be time-consuming to investigate
+                                            </li>
+                                            <li><strong>Limited Scope</strong><br>
+                                                If the plans are not comprehensive enough,
+                                                threats can be overlooked or teams may not
+                                                be prepared enough to deal with threats efficiently
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ResponsePlanning-Weakness" aria-expanded="false" aria-controls="collapseThree">
-                                <h6><strong>Weaknesses</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="ResponsePlanning-Weakness" class="accordion-collapse collapse" data-bs-parent="#ResponsePlanning">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><strong>Complexity</strong><br>
-                                        Can be a complex and cumbersome process
-                                    </li>
-                                    <li><strong>False Postiives</strong><br>
-                                        Can be time-consuming to investigate
-                                    </li>
-                                    <li><strong>Limited Scope</strong><br>
-                                        If the plans are not comprehensive enough, 
-                                        threats can be overlooked or teams may not 
-                                        be prepared enough to deal with threats efficiently
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <!-- Routine Patching & Updates -->
@@ -736,53 +845,63 @@
                                 vulnerabilities before hackers can.
                             </p>
                         </div>
-                    <div class="accordion" id="Patching&Updates">
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Patching&Updates-Strength" aria-expanded="false" aria-controls="collapseTwo">
-                                <h6><strong>Strengths</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="Patching&Updates-Strength" class="accordion-collapse collapse" data-bs-parent="#Patching&Updates">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><strong>Improved security</strong><br>
-                                        Fixes known vulnerabilities and addressing security flaws
-                                    </li>
-                                    <li><strong>Better Performance</strong><br>
-                                        Reduces slowdowns of the application, by implementation of adaptive security measures
-                                    </li>
+                        <div class="accordion" id="Patching&Updates">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#Patching&Updates-Strength" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <h6><strong>Strengths</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="Patching&Updates-Strength" class="accordion-collapse collapse"
+                                    data-bs-parent="#Patching&Updates">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Improved security</strong><br>
+                                                Fixes known vulnerabilities and addressing security flaws
+                                            </li>
+                                            <li><strong>Better Performance</strong><br>
+                                                Reduces slowdowns of the application, by implementation of adaptive
+                                                security measures
+                                            </li>
 
-                                    <li><strong>Compliance</strong><br>
-                                        Helps the application remain compliant with standards by keeping them up to date
-                                    </li>
-                                </ul>
+                                            <li><strong>Compliance</strong><br>
+                                                Helps the application remain compliant with standards by keeping them up
+                                                to date
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#Patching&Updates-Weakness" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <h6><strong>Weaknesses</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="Patching&Updates-Weakness" class="accordion-collapse collapse"
+                                    data-bs-parent="#Patching&Updates">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Disruptions</strong><br>
+                                                Can sometimes end up slowing down the system or leading to performance
+                                                issues
+                                            </li>
+                                            <li><strong>Compatibility Issues</strong><br>
+                                                If not implemented correctly can cause version mismatches and affect the
+                                                system as a whole leading to failures
+                                            </li>
+                                            <li><strong>Delayed Updates</strong><br>
+                                                Can leave the system vulnerable during updates
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Patching&Updates-Weakness" aria-expanded="false" aria-controls="collapseThree">
-                                <h6><strong>Weaknesses</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="Patching&Updates-Weakness" class="accordion-collapse collapse" data-bs-parent="#Patching&Updates">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><strong>Disruptions</strong><br>
-                                        Can sometimes end up slowing down the system or leading to performance issues
-                                    </li>
-                                    <li><strong>Compatibility Issues</strong><br>
-                                        If not implemented correctly can cause version mismatches and affect the system as a whole leading to failures
-                                    </li>
-                                    <li><strong>Delayed Updates</strong><br>
-                                        Can leave the system vulnerable during updates
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <!-- Data Encryption -->
@@ -792,59 +911,69 @@
                             <h5 class="card-title">Data Encryption</h5>
                             <p class="card-text">
                                 Data encryption is a key based strategy that scrambles information to become
-                                unreadable. Even if the hackers obtain the data, it cannot be used. Once the 
-                                authorized parties receive the information, the key is used to unscramble the information.
+                                unreadable. Even if the hackers obtain the data, it cannot be used. Once the
+                                authorized parties receive the information, the key is used to unscramble the
+                                information.
                             </p>
                         </div>
-                    <div class="accordion" id="DataEncryption">
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#DataEncryption-Strength" aria-expanded="false" aria-controls="collapseTwo">
-                                <h6><strong>Strengths</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="DataEncryption-Strength" class="accordion-collapse collapse" data-bs-parent="#DataEncryption">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><strong>Improved security</strong><br>
-                                        Even if data is stolen, it will be unreadable to anyone who does not have the decryption key
-                                    </li>
-                                    <li><strong>Compliance</strong><br>
-                                        Helps the application remain compliant with standards by keeping them up to date
-                                    </li>
+                        <div class="accordion" id="DataEncryption">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#DataEncryption-Strength" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <h6><strong>Strengths</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="DataEncryption-Strength" class="accordion-collapse collapse"
+                                    data-bs-parent="#DataEncryption">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Improved security</strong><br>
+                                                Even if data is stolen, it will be unreadable to anyone who does not
+                                                have the decryption key
+                                            </li>
+                                            <li><strong>Compliance</strong><br>
+                                                Helps the application remain compliant with standards by keeping them up
+                                                to date
+                                            </li>
 
-                                    <li><strong>Safe Data Storage & Transfer</strong><br>
-                                        Data can be safely stored and transmitted without the risk of exposure
-                                    </li>
-                                </ul>
+                                            <li><strong>Safe Data Storage & Transfer</strong><br>
+                                                Data can be safely stored and transmitted without the risk of exposure
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#DataEncryption-Weakness" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <h6><strong>Weaknesses</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="DataEncryption-Weakness" class="accordion-collapse collapse"
+                                    data-bs-parent="#DataEncryption">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Complexity</strong><br>
+                                                Can require specialized knowledge or expertise to
+                                                implement which can be challenging for organizations with limited
+                                                understanding
+                                            </li>
+                                            <li><strong>Key Management</strong><br>
+                                                Managing keys can be complex and time consuming
+                                            </li>
+                                            <li><strong>Performance Impact</strong><br>
+                                                The system can be slowed or require additional infrastructure when
+                                                large amount of data is being encrypted or decrypted
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#DataEncryption-Weakness" aria-expanded="false" aria-controls="collapseThree">
-                                <h6><strong>Weaknesses</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="DataEncryption-Weakness" class="accordion-collapse collapse" data-bs-parent="#DataEncryption">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><strong>Complexity</strong><br>
-                                        Can require specialized knowledge or expertise to 
-                                        implement which can be challenging for organizations with limited understanding
-                                    </li>
-                                    <li><strong>Key Management</strong><br>
-                                        Managing keys can be complex and time consuming
-                                    </li>
-                                    <li><strong>Performance Impact</strong><br>
-                                        The system can be slowed or require additional infrastructure when 
-                                        large amount of data is being encrypted or decrypted
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <!-- Security Automation & Orchestration -->
@@ -857,58 +986,66 @@
                                 operations
                             </p>
                         </div>
-                    <div class="accordion" id="SecurityAutomation">
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SecurityAutomation-Strength" aria-expanded="false" aria-controls="collapseTwo">
-                                <h6><strong>Strengths</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="SecurityAutomation-Strength" class="accordion-collapse collapse" data-bs-parent="#SecurityAutomation">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><strong>Increased Efficiency</strong><br>
-                                        By automating, fewer resources need to be used on hardware, software, and personnel
-                                    </li>
-                                    <li><strong>Improved Accuracy</strong><br>
-                                        Helps to make sure processes are carried out consistently and accurately
-                                    </li>
+                        <div class="accordion" id="SecurityAutomation">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#SecurityAutomation-Strength" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <h6><strong>Strengths</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="SecurityAutomation-Strength" class="accordion-collapse collapse"
+                                    data-bs-parent="#SecurityAutomation">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Increased Efficiency</strong><br>
+                                                By automating, fewer resources need to be used on hardware, software,
+                                                and personnel
+                                            </li>
+                                            <li><strong>Improved Accuracy</strong><br>
+                                                Helps to make sure processes are carried out consistently and accurately
+                                            </li>
 
-                                    <li><strong>Faster Response Time</strong><br>
-                                        Response to incidents are faster and more effectively by reducing the time it takes to detect an incident
-                                    </li>
-                                </ul>
+                                            <li><strong>Faster Response Time</strong><br>
+                                                Response to incidents are faster and more effectively by reducing the
+                                                time it takes to detect an incident
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#SecurityAutomation-Weakness" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <h6><strong>Weaknesses</strong></h6>
+                                    </button>
+                                </h2>
+                                <div id="SecurityAutomation-Weakness" class="accordion-collapse collapse"
+                                    data-bs-parent="#SecurityAutomation">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Complexity</strong><br>
+                                                If existing systems are not designed to work well together,
+                                                automation can be complex to implement and update
+                                            </li>
+                                            <li><strong>False Positives</strong><br>
+                                                Can lead to false positives if the algorithms are not well implemented
+                                                due to a lack of information or context
+                                            </li>
+                                            <li><strong>Limited Scope</strong><br>
+                                                Cannot automate to protect against something you are not aware of
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                        <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SecurityAutomation-Weakness" aria-expanded="false" aria-controls="collapseThree">
-                                <h6><strong>Weaknesses</strong></h6>
-                            </button>
-                        </h2>
-                        <div id="SecurityAutomation-Weakness" class="accordion-collapse collapse" data-bs-parent="#SecurityAutomation">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><strong>Complexity</strong><br>
-                                        If existing systems are not designed to work well together, 
-                                        automation can be complex to implement and update
-                                    </li>
-                                    <li><strong>False Positives</strong><br>
-                                        Can lead to false positives if the algorithms are not well implemented 
-                                        due to a lack of information or context
-                                    </li>
-                                    <li><strong>Limited Scope</strong><br>
-                                        Cannot automate to protect against something you are not aware of
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
-            </div>   
+            </div>
         </div>
 
         <hr>
@@ -923,7 +1060,7 @@
                 <li>Respond</li>
                 <li>Recover</li>
             </ul>
-        <hr>
+            <hr>
             <h2>ISO/IEC 27001 (Information Security Management Systems) Standard</h2>
             <ul>
                 <li>Systematically examine the organization's information security risks, taking account of the threats,
@@ -940,10 +1077,9 @@
         </div>
         <hr>
         <div class="Sources" id="section-10">
-            <h2>Sources</h2>
-            <p>Content for Section One goes here.</p>
-            <p>More content for Section One can be added here.</p>
+            <embed class="pdf-container" src="Works Cited.pdf" width="900" height="900" />
         </div>
+        <hr>
     </div>
 </body>
 

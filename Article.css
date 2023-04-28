@@ -1,72 +1,105 @@
 #navbar {
-    background-color: #333; /* Black background color */
-    position: fixed; /* Make it stick/fixed */
-    top: 0; /* Stay on top */
-    width: 100%; /* Full width */
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
-  }
-  
-  /* Style the navbar links */
-  #navbar a {
+    background-color: #333;
+    /* Black background color */
+    position: fixed;
+    /* Make it stick/fixed */
+    top: 0;
+    /* Stay on top */
+    width: 100%;
+    /* Full width */
+    transition: top 0.3s;
+    /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+#navbar a {
     float: left;
     display: block;
     color: white;
     text-align: center;
     padding: 15px;
     text-decoration: none;
-  }
-  
-  #navbar a:hover {
+}
+
+#navbar a:hover {
     background-color: #ddd;
     color: black;
-  }
+}
+
 /* ------------------------------- */
 .parent {
-padding-left:2%;
-padding-right:2%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
-.TitleHeader{
-    position:relative;
+.TitleHeader {
+    position: relative;
     margin-top: 5%;
     text-align: center;
-    
-}
-
-.TOC{
-    padding-left: 1%;
-}
-.toc-list{
 
 }
 
-.SummCybersecurity{
-
+.TOC {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
 }
-.CybersecurityHistory{
 
+.list-group-flush li {
+    list-style-type: none;
 }
-.ZeroDayExploits{
 
+.row {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #aaa;
 }
-.ZeroDayImg{
 
-}
-.CyberAttackExamples{
+.toc-list {}
 
-}
-.WhyOS{
+.SummCybersecurity {}
 
-}
-.RealCyberAttacks{
+.CybersecurityHistory {}
 
-}
-.ModernCybersecurityStandards{
+.ZeroDayExploits {}
 
+.ZeroDayImg {}
+
+.CyberAttackExamples {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #aaa;
 }
+
+.WhyOS {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #aaa;
+}
+
+.RealCyberAttacks {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #aaa;
+}
+
+.ModernCybersecurityStandards {}
+
 /* .securitymeasures-cardgroup{
     breakpoint:
 } */
+
+.CybersecurityStandards {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #aaa;
+}
 
 .section-1 {}
 
@@ -106,4 +139,9 @@ ul ul {
 ol,
 ul {
     margin-bottom: 20px;
+}
+
+.pdf-container {
+    display: block;
+    margin: 0 auto;
 }
